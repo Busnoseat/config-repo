@@ -32,7 +32,8 @@ spring:
 
 callBackUrl:
   transaction:
-    regix: {"E":"http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice","S":"http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice2"}
+    regix: [e,s]
+    url: [urlE,urls]
   transactionSH:
     regix: E
     url:
