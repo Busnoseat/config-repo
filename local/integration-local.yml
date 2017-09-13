@@ -29,10 +29,13 @@ spring:
     logViolation: true
     throwException: true
 
+
 callBackUrl:
+  transaction:
+    regix: {"E":"http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice","S":"http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice2"}
   transactionSH:
     regix: E
-    url: http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice
+    url:
   transactionGZ:
     regix: S
     url: http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice2
