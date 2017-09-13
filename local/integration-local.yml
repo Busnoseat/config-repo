@@ -1,0 +1,43 @@
+spring:
+  datasource: 
+    url: "jdbc:sqlserver://masterdb.dev.qiaofangyun.com:1433;DatabaseName=qf_payment_dev"
+    username: sa
+    password: p@ssword1
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialSize: 10
+    minIdle: 2
+    maxActive: 100
+    maxWait: 5000
+    timeBetweenEvictionRunsMillis: 5000
+    minEvictableIdleTimeMillis: 5000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 200
+    removeAbandoned: true
+    removeAbandonedTimeout: 1800
+    logAbandoned: true
+    proxyFilters: stat-filter
+    slowSqlMillis: 2000
+    logSlowSql: true
+    mergeSql: false
+    loginDruidUsername: admin
+    loginDruidPassword: password2
+    dbType: sqlserver
+    logViolation: true
+    throwException: true
+
+callBackUrl:
+  transactionSH:
+    regix: E
+    url: http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice
+  transactionGZ:
+    regix: S
+    url: http://apollo.dev.qiaofangyun.com/api/transactionbff//pos/proceeds/payNotice2
+
+apigetway:
+    transactionbff:
+        appid: pos
+        appkey: xxe9c85e2e80904039a2a1c3c4599272c2
