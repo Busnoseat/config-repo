@@ -32,7 +32,7 @@ spring:
 
 callBackUrl:
   transaction:
-    regix: {"S":"urlS","E":"urlE"}
+    regix: '{"S":"urlS","E":"urlE"}'
   transactionSH:
     regix: E
     url:
