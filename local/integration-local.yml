@@ -32,8 +32,8 @@ spring:
 
 callBackUrl:
   transaction:
-    regix: [e,s]
-    url: [urlE,urls]
+    regix: e,s
+    url: urlE,urls
   transactionSH:
     regix: E
     url:
